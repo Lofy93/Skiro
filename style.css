@@ -1,0 +1,163 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/BG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-color: #123;
+    color: white;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left,
+.right {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.remain_cards {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.player1 {
+    width: 50%;
+    height: 25vh;
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 15px;
+}
+
+.player2 {
+    width: 50%;
+    height: 25vh;
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+}
+
+.player3 {
+    width: 50%;
+    height: 25vh;
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 15px;
+}
+
+.player4 {
+    width: 50%;
+    height: 25vh;
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+}
+
+hr {
+    border: 1px solid;
+    color: hsl(210, 50%, 13%);
+}
+
+.cards {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+span {
+    width: 10%;
+    height: 5vh;
+    padding: 40px 20px;
+    border-radius: 10px;
+    border: 1px solid gold;
+    background-image: linear-gradient(to bottom right, hsl(0, 0%, 0%), hsl(211, 88%, 16%));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s ease;
+}
+
+span:hover {
+    scale: 1.1;
+}
+
+.remain_cards .not_use {
+    background-color: rgb(109, 85, 63);
+}
+
+.remain_cards .used {
+    background-color: rgb(0, 153, 20);
+}
+
+.up {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.down {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width: 1300px){
+    span {
+        width: 10%;
+        height: 5vh;
+        padding: 30px 15px;
+        font-size: 15px;
+    }
+    .player1 ,
+    .player2 ,
+    .player3 ,
+    .player4 {
+        width: 100%;
+    }
+    .not_use ,
+    .used{
+        font-size: 10px;
+    }
+}
+@media(max-width: 768px) {
+    span {
+        width: 10%;
+        height: 5vh;
+        padding: 20px 10px;
+        font-size: 10px;
+    }
+    .player1 ,
+    .player2 ,
+    .player3 ,
+    .player4 {
+        width: 100%;
+    }
+    .not_use ,
+    .used{
+        font-size: 7px;
+    }
+}
